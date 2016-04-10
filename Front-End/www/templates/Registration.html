@@ -1,0 +1,33 @@
+<ion-modal-view>
+  <ion-content>
+    <form>
+     <div class="container">
+    <section class="register">
+      <h1>Register on App</h1>
+      <form>
+              <div class="reg_section personal_info">
+              <h3>Your Personal Information</h3>
+              <input type="text" ng-model="newuser.username" placeholder="Name" required="true"/>
+              <input type="text" ng-model="newuser.email" placeholder="Your E-mail Address"/>
+              </div>
+              <div class="reg_section password">
+              <h3>Your Password</h3>
+              <input type="password" ng-model="newuser.password" placeholder="Your Password">
+              <input type="password" name="confirm" value="" placeholder="Confirm Password">
+              </div>
+             
+              <p class="terms">
+                <label>
+                  <input type="checkbox" name="remember_me" id="remember_me">
+                   I accept Terms & Condition
+                </label>
+              </p>
+              <p class="submit"><button type="button" ng-click="registration()">Sign Up</button></p>
+
+              <p ng-bind="message"></p> 
+              </form>
+    </section>
+  </div>
+</form>
+  </ion-content>
+</ion-modal-view>

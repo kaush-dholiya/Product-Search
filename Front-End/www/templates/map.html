@@ -1,0 +1,16 @@
+<ion-view>
+    <ion-content>
+    <div>
+			<span class="custom-dropdown big">
+			  <!-- <select ng-model="selectedTestAccount" ng-options="c as c.category for c in type"></select> -->
+			        <select ng-model="selectedCategory.cname" ng-change="search()">
+			        	<option  value="{{ c }}" ng-repeat="c in type track by $index">{{ c }} </option>
+			        </select>
+			</span>
+
+ 			<button class="button button-block button-positive" type="button" width="20">Search</button>
+    </div>
+        
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+</ion-view>
